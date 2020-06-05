@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>John Brugman</title>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <title>Tracking C. Elegans</title>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/worm.css">
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<body>
 <!-- Content will go here -->
 <!-- Title Section -->
   <section class="w3-container w3-center w3-content" style="max-width:600px">
@@ -23,15 +23,33 @@
 <li><a href="publications.html">Publications</a></li>
 <li><a href="resume.html">Resume</a></li>
 </ul>
+<body>
 
+  <section class="worms">
 <!-- Project Information Here -->
+<img src="images/Adult_Caenorhabditis_elegans.jpg" alt="C. Elegans" style="width:auto;height:200px;" class="center">
+    <h1>Tracking the speed of C. Elegans Mutants</h1>
+    <h4><i>*This projects results are anonymized until it has been published.</i></h4>
 
-<h1>Tracking the speed of C. Elegans Mutants</h1>
-<h4><i>*This projects results are anonymized until it has been published.</i></h4>
+    <h4>The full project can be seen on <a href="https://github.com/brugmanj/worm_tracker">this page.</a></h4>
 
-<h2>Problem:</h2>
-<p>Current tracking system (The Multi Worm Tracker) is not confirming that which has been observed. There was seen to be a difference in movement between certain C. Elegans mutations and their normal non-mutated state (wild-type worms). This is mainly due to the current tracker looking for movement, and not the cessation of movement, which was observed. By utilizing OpenCV, Convoluted Neural Networks, Yolo and SSD object detection, and centroid tracking, I will design a worm tracker to look for cessation of movement to either confirm or deny this observation. As a secondary problem I decided I would try and predict which mutation we were given just by analyzing the video. This would be useful if a plate of worms was ever unlabeled, we could just run a video analysis on the worms to see which mutation we most likely have.</p>
+    <h2>Quick Summary:</h2>
+    <p>I was approached by a graduate student to help discern the differences between different strains of the C. Elegans worms. Several mutations were made which should have an affect on the movement of the worm, but their current tracking system was not able to tell the difference. Using openCV, I tracked the centroid of each worm on a given video, and recorded their locations. By analyzing the speeds and accelerations of these centroids for each mutation, and against the non-mutated (wild type) version, I was able to use ANOVA and T-testing to see if there was statistical significance between their accelerations. It turned out that all mutations were significantly different from the wild-type, and some mutations had unexpected results. This project was able to confirm what was assumed to be true, thus allowing more research to continue with these specific mutations.
+    </p>
 
+    <h2>Problem:</h2>
+    <p>Current tracking system (The Multi Worm Tracker) is not confirming that which has been observed. There was seen to be a difference in movement between certain C. Elegans mutations and their normal non-mutated state (wild-type worms). This is mainly due to the current tracker looking for movement, and not the cessation of movement, which was observed. By utilizing OpenCV, Convoluted Neural Networks, Yolo and SSD object detection, and centroid tracking, I will design a worm tracker to look for cessation of movement to either confirm or deny this observation. As a secondary problem I decided I would try and predict which mutation we were given just by analyzing the video. This would be useful if a plate of worms was ever unlabeled, we could just run a video analysis on the worms to see which mutation we most likely have.</p>
+
+    <h2>Hypothesis Testing:</h2>
+    <p>Hypothesis testing is a way to verify if your hypothesis is correct or not from analyzing the data. My null hypothesis would be that there is no significance in acceleration between mutated and wild-type worms. My alternative hypothesis is that there is a statistically signifiant difference between at least one mutation and the wild-type.</p>
+
+    <h2>Data Collection:</h2>
+    <p>There were 3 main stages to the data collection process. First was the filming of the videos. This was conducted by graduate students at a local university. This consisted of 77 videos about 4 minutes long each taken through a microscope of no more than 8 worms in each video. This was conducted over a period of several days, and included the three main mutations, several combinational mutations, and the wild-type worms. </br></br>
+
+    Part 2 of the data collection was labeling the worms for neural network detection. First off I wrote a script (make_photos.py) which went through each video and saved a frame every 100 frames. Then using a program called LabelImg, I went through 200 of the saved frames and drew a box around each worm, saving the locations in XML files, so the worms can be found later. I did end up writing some code in notebook 03 to go through these files and crop out all the worms to save to another folder. This way I would have all the individual worms if I wanted to train a worm-image detector later. This never came into play though. </br></br>
+
+    Part 3 involved collecting the locations of the worms through OpenCV in case I decided not to go the neural network route. This involved writing another script (outlineworms.pt) which went through and using contours found and outlined all worms. The script found each worm, calculated their centroids, and drew a box around the worms. This script was later adapted into a jupyter file which logged all the centroid for each worm in a csv file. Once all the centroids were collected, the data collection phase ended.</p>
+  </section>
 </body>
 <div class="footer">
   <p>Created by John Brugman in 2020.</p>

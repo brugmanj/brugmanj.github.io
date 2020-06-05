@@ -25,9 +25,9 @@
   text-align: center;
 }
 
-/* General Spacing */
-h1 {text-align: center;}
-h4 {text-align: center;}
+.worms {
+  margin: 0 30%;
+}
 
 
 /* Picture Grid */
@@ -40,7 +40,7 @@ h4 {text-align: center;}
 }
 
 .xop-grid {
-	margin: 20px 0 0 0;
+	margin: 0 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
@@ -91,23 +91,23 @@ h4 {text-align: center;}
 
 .xop-img-1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(images/worm.png);
+	url(../images/worm.png);
 }
 
 .xop-img-2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(images/covid2.jpg);
+	url(../images/covid2.jpg);
 
 }
 
 .xop-img-3 {
 	background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(images/reddit.png);
+	url(../images/reddit.png);
 }
 
 .xop-img-4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(images/regression.png);
+	url(../images/regression.png);
 }
 
 .xop-info {
