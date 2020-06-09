@@ -1,34 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>John Brugman</title>
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-</head>
+<title>John Brugman Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<body>
-<!-- Content will go here -->
-<!-- Title Section -->
-  <section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">John Brugman</h2>
-    <p class="w3-opacity"><i>Data Scientist - <a href = "mailto: me@johnbrugman.com">me@johnbrugman.com</a> - (626) 825-2537</i></p>
-  </section>
 
-<!-- Navigation Bar -->
-<ul class="nav">
-<li><a href="index.html">Projects</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="resume.html">Resume</a></li>
-</ul>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-<!-- Project Information Here -->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="images/headshot.JPG" alt="John Brugman" />
+		</div>
 
+		<div id="name">
+			<h1 class="quickFade delayTwo">John Brugman</h1>
+			<h2 class="quickFade delayThree">Data Scientist</h2>
+		</div>
 
-</body>
-<div class="footer">
-  <p>Created by John Brugman in 2020.</p>
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>e: <a href="mailto:me@johnbrugman.com" target="_blank">me@johnbrugman.com</a></li>
+				<li>w: <a href="http://www.johnbrugman.com">www.johnbrugman.com</a></li>
+				<li>m: (626) 825-2537</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Summary</h1>
+				</div>
+
+				<div class="sectionContent">
+					<p>I am a passionate data scientist with experience in technology support. With a strong background in mathematics and programming, I have not only the skills, but the knowledge to solve data problems. I love to share my knowledge and insights with others, and I am motivated by always being challenged, and actively working on a problem to come to a solution.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Python</li>
+					<li>Data Cleaning</li>
+					<li>Data Analysis</li>
+					<li>Predictive Modeling</li>
+					<li>Web Scraping</li>
+					<li>Machine Learning</li>
+					<li>C++</li>
+					<li>Data Visualizations</li>
+					<li>Neural Networks</li>
+					<li>Cloud Computing</li>
+					<li>Pandas</li>
+					<li>Scikit-Learn</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>Oregon State University</h2>
+					<p class="subDetails">B.S. Mathematics, Algebra and Number Theory</p>
+				</article>
+
+				<article>
+					<h2>General Assembly</h2>
+					<p class="subDetails">Data Science Immersive Certificate</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Data Science Projects</h1>
+			</div>
+
+			<div class="sectionContent">
+				<article>
+					<h2>Mutant Worm Tracking</h2>
+					<p class="subDetails">Febuary 2020 - Present</p>
+					<ul>
+						<li>Designed Computer Vision solution to track the speed of mutant strains of C. Elegans worms</li>
+						<li>Utilized object detection and centroid tracking to analyze speed of worms</li>
+						<li>Applied tensor flow and custom image detection using Google Colab and AWS to track worms</li>
+						<li>Analyzed different mutations of C. Elegans acceleration to discern differences</li>
+						<li>Concluded significance in acceleration of mutations</li>
+					</ul>
+					<br>
+				</article>
+
+				<article>
+					<h2>Social Media Lies</h2>
+					<p class="subDetails">Febuary 2020</p>
+					<ul>
+						<li>Identified misinformation during COVID-19 pandemic</li>
+						<li>Applied web scraping to collect news articles and tweets to fact check</li>
+						<li>Analyzed old tweets to retrieve words related to false or true news</li>
+						<li>Predicted if a tweet was reliable or not based off of context clues with 81% accuracy</li>
+					</ul>
+					<br>
+				</article>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section>
+				<div class="sectionTitle">
+					<h1>Quantitative Coursework</h1>
+				</div>
+
+				<div class="sectionContent">
+					<ul>
+						<li>Stochastic Elements in Mathematical Biology</li>
+						<li>Metric Spaces and Topology</li>
+						<li>Calculus (Vector, Complex Variable)</li>
+						<li>Non-Euclidean Geometry</li>
+						<li>Combinatorics</li>
+						<li>Computational Number Theory</li>
+						<li>Abstract Algebra</li>
+						<li>Physics with Calculus</li>
+						<li>Computer Science (C and C++)</li>
+						<li>Applications of Math Software (Sage, MatLab)</li>
+						<li>Embedded Programming</li>
+						<li>Technical Writing</li>
+						<li>Discrete Mathematics</li>
+						<li>Probability</li>
+					</ul>
+					<br>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<section>
+				<div class="sectionTitle">
+					<h1>Extra Curricular Activites</h1>
+				</div>
+
+				<div class="sectionContent">
+					<ul>
+						<li>Eagle Scout</li>
+						<li>Volunteer Crew with Los Angeles Maritime Institute</li>
+						<li>Volunteer with Two Bit Circus Foundation</li>
+						<li>Oregon State University Marching Band Drumline</li>
+						<li>Oregon State University Steel Band</li>
+						<li>Caltech-Occidental Wind Orchestra Percussionist</li>
+					</ul>
+				</div>
+				<br>
+				<div class="clear"></div>
+			</section>
+
+	</div>
 </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
 </html>

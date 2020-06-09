@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>John Brugman</title>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/worm.css">
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +27,27 @@
 
 <!-- Project Information Here -->
 
+
+<section class="worms">
+  <h1>Disaster Misinformation</h1>
+  <h4><i>By: John Brugman, Brendan Lo, Morvarid Esam, and Cory Cohen</i></h4>
+    <h4>The full project can be seen on <a href="https://git.generalassemb.ly/brugmanj/project_5/blob/master/Project%205%20-%20final%20.pdf">this page.</a></h4>
+
+  <h2>Project Summary:</h2>
+
+    <p>
+      The past two decades have seen a meteoric rise of social media, particularly in allowing individuals the ability to reach ever-increasing numbers of peers with little to no cost. This amplification has significantly increased the voice of many who had previously been disenfranchised; however, it has also led to an unprecedented amount of opinion being portrayed as fact, or downright falsehoods being touted as gospel.
+
+      By using NLP techniques, we were able to accurately predict which tweets for a recent desaster were likely to be true or false. We would not be able to know for sure without fact checking, and in this social meadia age, news gets spread much faster than can be checked. By modeling off of a database of previously labeled tweets, we can use context clues to see if the pattern of words is more truthful or not. This is especially helpful when there are conflicting reports, so we can get an idea of reliable new sources.
+    </p>
+
+  <h2>Results:</h2>
+
+    <p>
+      By using a Multinomial Naive Bayes Classifier, we modeled our database of text. Applying this model to our scraped tweets, we were able to get an accuracy score of 80%, with a precision of 82.2%. This was significantly better than we expected, but with proper implementation we are confident we can improve our accuracy. We also implemented a translator, and modeled in different languages as to help with global news, not just those English sources.
+    </p>
+
+</section>
 
 </body>
 <div class="footer">
