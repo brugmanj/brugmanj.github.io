@@ -89,6 +89,11 @@
 	transform: scale(1.05);
 }
 
+.xop-img-0 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/asl.jpg);
+}
+
 .xop-img-1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
 	url(../images/worm.png);
